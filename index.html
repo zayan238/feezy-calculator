@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#17121f">
+  <title>Shinobi Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="naruto">
+  <nav class="navbar">
+    <a class="brand" href="#" aria-label="Shinobi Calculator home">
+      <span class="brand-mark">木</span>
+      <span>SHINOBI<span class="brand-accent"> CALC</span></span>
+    </a>
+    <div class="nav-right">
+      <label class="theme-label" for="themeSelect">THEME</label>
+      <select id="themeSelect" aria-label="Choose calculator theme">
+        <option value="naruto">🍥 Naruto</option>
+        <option value="dark">🌑 Midnight</option>
+        <option value="light">☀️ Minimal Light</option>
+        <option value="cyber">⚡ Cyberpunk</option>
+        <option value="ocean">🌊 Ocean</option>
+      </select>
+    </div>
+  </nav>
+
+  <main class="page">
+    <section class="intro">
+      <p class="eyebrow">YOUR POCKET-SIZED JUTSU</p>
+      <h1>Calculate like a <span>Hokage.</span></h1>
+      <p class="subtitle">A little math, a lot of ninja energy.</p>
+    </section>
+
+    <section class="calculator" aria-label="Calculator">
+      <div class="calc-top">
+        <div class="mode"><span class="status-dot"></span> CHAKRA POWERED</div>
+        <button id="clearHistory" class="history-clear" type="button">CLEAR HISTORY</button>
+      </div>
+      <div class="display">
+        <div id="previous" class="previous" aria-live="polite"></div>
+        <div id="current" class="current" aria-live="polite">0</div>
+      </div>
+      <div class="keypad">
+        <button class="key utility" data-action="clear">AC</button>
+        <button class="key utility" data-action="delete" aria-label="Delete last digit">DEL</button>
+        <button class="key utility" data-action="percent">%</button>
+        <button class="key operator" data-value="÷">÷</button>
+
+        <button class="key" data-value="7">7</button>
+        <button class="key" data-value="8">8</button>
+        <button class="key" data-value="9">9</button>
+        <button class="key operator" data-value="×">×</button>
+
+        <button class="key" data-value="4">4</button>
+        <button class="key" data-value="5">5</button>
+        <button class="key" data-value="6">6</button>
+        <button class="key operator" data-value="−">−</button>
+
+        <button class="key" data-value="1">1</button>
+        <button class="key" data-value="2">2</button>
+        <button class="key" data-value="3">3</button>
+        <button class="key operator" data-value="+">+</button>
+
+        <button class="key utility" data-action="sign">+/−</button>
+        <button class="key" data-value="0">0</button>
+        <button class="key" data-value=".">.</button>
+        <button class="key equals" data-action="equals">=</button>
+      </div>
+      <div class="calc-foot"><span>忍</span> BUILT FOR YOUR NEXT MISSION</div>
+    </section>
+
+    <aside class="history-panel">
+      <div class="history-heading">
+        <h2>Recent calculations</h2>
+        <span class="history-count" id="historyCount">0</span>
+      </div>
+      <ul id="historyList" class="history-list">
+        <li class="empty-history">Your calculation history will appear here.</li>
+      </ul>
+    </aside>
+    <footer>Made with <span>♥</span> for the Hidden Leaf Village</footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
