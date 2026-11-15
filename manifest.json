@@ -1,0 +1,20 @@
+{
+  "name": "feezy-calculator App",
+  "short_name": "feezy-calculator",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#121212",
+  "theme_color": "#1f2937",
+  "icons": [
+    {
+      "src": "./Neon Ninja Calculator Gaming Emblem.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "./Neon Ninja Calculator Gaming Emblem.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
